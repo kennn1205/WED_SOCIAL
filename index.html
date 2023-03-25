@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Network</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="shortcut icon" href="fv.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- <div class ="post-click">
+        <img src="" alt="">
+    </div> -->
+    <nav>
+        <div class="nav-left">
+            <img src="./images/logo2.png" class="logo">
+            <ul>
+                <li><img class="hover" src="./images/notification.png"></li>
+                <li><img class="hover" src="./images/inbox.png"></li>
+                <li><img class="hover" src="./images/video.png"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+
+
+            <div class="search-box">
+                <img src="./images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online"onclick="SettingsMenuToggle()">
+                <img src="./images/avt.jpg">
+            </div>
+        </div>
+
+        <!--------- setting-menu------------->
+        <div class="setting-menu">
+            <div id="dark-btn" >
+                <span></span>
+            </div>
+            <div class="setting-menu-inner">
+                <div class="user-profile">
+                    <img src="./images/avt.jpg">
+                    <div>
+                        <p>Nguyên Dương</p>
+                        <a href="#">Trang cá nhân</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="./images/feedback.png">
+                    <div>
+                        <p>Give feedback</p>
+                        <a href="#">Help us to improve the wedsitewedsite</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="setting-link">
+                    <img src="./images/setting.png" class="setting-icon">
+                    <a href="#">Setting & Privacy <img src="./images/arrow.png" width="10px"> </a>
+                </div>
+                <div class="setting-link">
+                    <img src="./images/help.png" class="setting-icon">
+                    <a href="#">Help & Support <img src="./images/arrow.png" width="10px"> </a>
+                </div>
+                <div class="setting-link">
+                    <img src="./images/display.png" class="setting-icon">
+                    <a href="#">Display & Accessibility <img src="./images/arrow.png" width="10px"> </a>
+                </div>
+                <div class="setting-link">
+                    <img src="./images/logout.png" class="setting-icon">
+                    <a href="#">Logout <img src="./images/arrow.png" width="10px"> </a>
+                </div>
+            </div>
+            
+        </div>
+    </nav>
+
+    <div class="container">
+        <!--------- left-sidebar------------->
+        <div class="left-sidebar">
+            <div class="imp-link">
+                <a href="#"><img src="./images/news.png">Bài viết mới</a>
+                <a href="#"><img src="./images/friends.png">Bạn</a>
+                <a href="#"><img src="./images/group.png">Nhóm</a>
+                <a href="#"><img src="./images/marketplace.png">Thị trường</a>
+                <a href="#"><img src="./images/watch.png">Watch</a>
+                <a href="#">Xem thêm</a>
+            </div>
+            <div class="shortcut-link">
+                <p>Lối tắt của bạn</p>
+                <a href="#"><img src="./images/shortcut-1.png">Wed Developers</a>
+                <a href="#"><img src="./images/shortcut-2.png">Wed Design</a>
+                <a href="#"><img src="./images/shortcut-3.png">Full stack Dev</a>
+                <a href="#"><img src="./images/shortcut-4.png">Wedsite Experts</a>
+            </div>
+        </div>
+        <!---------main-content------------->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="./images/upload.png">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="./images/IUU.jpg">
+                    <p>IU</p>
+                </div>
+                <div class="story story3">
+                    <img src="./images/avtIU.jpg">
+                    <p>Lee Ji Eun</p>
+                </div>
+                <div class="story story4">
+                    <img src="./images/avtduc.png">
+                    <p>Dlwlrma</p>
+                </div>
+                <div class="story story5">
+                    <img src="./images/IUUUU.jpg">
+                    <p>이지금 IU</p>
+                </div>
+            </div>
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="./images/avt.jpg">
+                    <div>
+                        <p>Nguyên Dương</p>
+                        <small>Công khai<i class="fa-solid fa-caret-down"></i></small>
+
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="Bạn đang nghĩ gì?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="./images/live-video.png">Video trực tiếp</a>
+                        <a href="#"><img src="./images/photo.png">Ảnh/Video</a>
+                        <a href="#"><img src="./images/feeling.png">Cảm xúc/Hoạt động</a>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./images/avt.jpg">
+                        <div>
+                            <p>Nguyên Dương</p>
+                            <span>Math 12 2004, 00:00 pm.</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">You are so pretty 🥀 <br> <br>
+                    <span>@duog04</span>
+                    <a href="#">#Lee Ji Eun</a>
+                    <a href="#">#photo4kr</a>
+                </p>
+                <img src="./images/post0.jpg" class="post-img" id="post-imgg">
+                <hr>
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="./images/like-blue.png">Thích</div>
+                        <div><img src="./images/comments.png">Bình luận</div>
+                        <div><img src="./images/share.png">Chia sẻ</div>
+                    </div>       
+                    <div class="post-profile-icon">
+                        <img src="./images/avt.jpg"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./images/avtIU.jpg">
+                        <div>
+                            <p>Lee Ji Eun</p>
+                            <span>10 minute.</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Being different isn't a bad thing. It means you're brave enough to be yourself. 💙
+                    <br><br>
+                    <span>@IU</span> 
+                    <a href="#">#LeeJiEun</a>
+                    <a href="#">#dlwlrma</a>
+                </p>
+                <img src="./images/post1.jpg" class="post-img">
+                <hr>
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="./images/like-blue.png">Thích</div>
+                        <div><img src="./images/comments.png">Bình luận</div>
+                        <div><img src="./images/share.png">Chia sẻ</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./images/avt.jpg"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./images/avtduc.png">
+                        <div>
+                            <p>Dlwlrma</p>
+                            <span>2 day.</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">
+                    [IU POST] <br>
+                    한번 보면 밤을 새우게 만드는 화보 장인 🎶❤️ <br>
+                    A pictorial master <br>
+                    who makes you stay up all night 
+                    once you see her❤️  <br> <br>
+                    <span>@Dlwlrma</span>
+                    <a href="#">#Facebookfake</a>
+                    <a href="#">#Developer</a>
+                </p>
+                <img src="./images/post2.jpg" class="post-img">
+                <img src="./images/post3.jpg" class="post-img">
+                <hr>
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="./images/like-blue.png">Thích</div>
+                        <div><img src="./images/comments.png">Bình luận</div>
+                        <div><img src="./images/share.png">Chia sẻ</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./images/avt.jpg"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="post-container">
+                
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./images/avt.jpg">
+                        <div>
+                            <p>Nguyên Dương</p>
+                            <span>Math 12 2004, 00:00 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">Subscribe <span>@duog04</span> Genius is one percent inspiration and ninety-nine
+                    percent perspiration.
+                    <a href="#">#Facebookfake</a>
+                    <a href="#">#Developer</a>
+                </p>
+                <iframe class="post-vid" width="560" height="315" src="https://www.youtube.com/embed/TgOu00Mf3kI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <hr>
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="./images/like-blue.png">Thích</div>
+                        <div><img src="./images/comments.png">Bình luận</div>
+                        <div><img src="./images/share.png">Chia sẻ</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./images/avt.jpg"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="post-container">
+                
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./images/avt.jpg">
+                        <div>
+                            <p>Nguyên Dương</p>
+                            <span>Math 12 2004, 00:00 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                
+                <p class="post-text">Subscribe <span>@duog04</span> Genius is one percent inspiration and ninety-nine
+                    percent perspiration.
+                    <a href="#">#Facebookfake</a>
+                    <a href="#">#Developer</a>
+                </p>
+                <iframe class="post-vid" width="560" height="315" src="https://www.youtube.com/embed/D1PvIWdJ8xo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <hr>
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="./images/like-blue.png">Thích</div>
+                        <div><img src="./images/comments.png">Bình luận</div>
+                        <div><img src="./images/share.png">Chia sẻ</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./images/avt.jpg"><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <button type="button" class="load-more-bt">Load more</button>
+
+        </div>
+        <!--------- right-sidebar------------->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Sự kiện</h4>
+                <a href="#">Xem tất cả</a>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>23</h3>
+                    <span>February</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mobile Programming</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Willson tech park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>23</h3>
+                    <span>February</span>
+                </div>
+
+                <div class="right-event">
+                    <h4>Mobile Programming</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Willson tech park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="sidebar-title">
+                <h4>Quảng cáo</h4>
+                <a href="#">Đóng</a>
+            </div>
+
+            <img src="./images/bg.jpg" class="sidebar-ads">
+
+            <div class="sidebar-title">
+                <h4>Cuộc hội thoại</h4>
+                <a href="#">Ẩn</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="./images/ken.jpg">
+                </div>
+                <p>Ken</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="./images/mt.jpg">
+                </div>
+                <p>Minh Thảo</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="./images/mkh.jpg">
+                </div>
+                <p>Mã Khải Hoàng</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="./images/mk.jpg">
+                </div>
+                <p>Nguyễn Minh Kỳ</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="./images/ak.jpg">
+                </div>
+                <p>Anh Khôi</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="./images/mn.jpg">
+                </div>
+                <p>Nguyễn Mai Nga</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="./images/bn.jpg">
+                </div>
+                <p>Đỗ Bích Ngọc</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="./images/member-3.png">
+                </div>
+                <p>demo</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="./images/member-3.png">
+                </div>
+                <p>demo</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="./images/member-3.png">
+                </div>
+                <p>demo</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="row">
+            <div class="row-left">
+                <div class="left">
+                    <div class="left-logo">
+                        <img src="./images/logo2.png" alt="">
+                    </div>
+                    <ul>
+                        <li>
+                            <label for="">Adress:</label> FPT Polytechnic
+                        </li>
+                        <li>
+                            <label for="">Phone:</label> 0971778103
+                        </li>
+                        <li>
+                            <label for="">Email:</label> duongtnps29179@fpt.edu.vn
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row-center">
+                <div class="center">
+                    <h6>Trang wed</h6>
+                    <ul>
+                        <li><a href="">Trang Chủ</a></li>
+                        <li><a href="">Giới Thiệu</a></li>
+                        <li><a href="">Liên Hệ</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="row-right">
+                <div class="right">
+                    <h6>Liên hệ chúng tôi ngay</h6>
+                    <p>Cung cấp Email để nhận được các thông tin mới nhất từ chúng tôi </p>
+                    <form action="#">
+                        <input type="text" placeholder="           Enter your mail">
+                        <button type = "submit">Subscribe</button>
+                    </form>
+                    <div class="fa-insta">
+                        <a href="">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div><hr>
+            <div class="row2-con">   
+                    <p>Copyright ©2023 All rights reserved | This Website made by Duong </p>              
+            </div>
+    
+        
+</body>
+<script src="index.js"></script>
+</html>

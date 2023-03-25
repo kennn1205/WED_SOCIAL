@@ -1,0 +1,184 @@
+.footer{
+    display:flex;
+    justify-content: center;
+    border-top:1px solid white;
+    padding:15px 0;
+    overflow:hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+}
+.row{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: -15px;
+    margin-left: -15px;
+    max-width: 1280px;
+    width:100%;
+}
+.row-left{
+    /* min-width: 992px; */
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.left{
+    margin-bottom: 30px;
+}
+.left-logo{
+    margin-bottom: 15px;
+    color:aqua;
+}
+.left ul li{
+    font-size: 16px;
+    color: #1c1c1c;
+    line-height: 36px;
+    list-style: none;
+}
+.left ul li label{
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+.left-logo img{
+    width:10rem;
+}
+.left ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.row-center{
+    display:flex;
+    justify-content: center;
+    /* min-width: 992px; */
+    margin-left: 8.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+.center{
+    width: 60%;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.center h6{
+    color: #1c1c1c;
+    font-weight: 800;
+    margin-bottom: 10px;
+    padding-right: 130px;
+    margin: 0;
+    font-size: inherit;
+    font-family: "Cairo", sans-serif;
+    line-height: 50px;
+}
+.center ul {
+    width: 50%;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.center ul li{
+    list-style: none;
+}
+.center ul li a{
+    color: #1c1c1c;
+    font-size: 14px;
+    line-height: 35px;
+    text-decoration: inherit;
+    background-color: transparent;
+}
+.row-right{
+    /* min-width: 992px; */
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+
+}
+.right{
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.right h6{
+    color: #1c1c1c;
+    /* margin-bottom: 30px;
+    margin-top: 30px; */
+    font-weight: 700;
+    margin: 0;
+    font-size: inherit;
+    font-family: "Cairo", sans-serif;
+    line-height: 50px;
+}
+.right p{
+    font-size: 14px;
+    color: #1c1c1c;
+    /* margin-bottom: 30px;
+    margin-top: 30px; */
+    margin: 0;
+    font-family: "Cairo", sans-serif;
+    font-weight: 400;
+    line-height: 80px;
+}
+.right form{
+    position: relative;
+    margin-bottom: 30px;
+}
+.right form input{
+    width:100%;
+    font-size: 16px;
+    padding-left: 20px;
+    color: #1c1c1c;
+    height: 46px;
+    border: 1px solid #ededed;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    border-radius: 10px;
+    border: 1px solid #ededed;
+    
+}
+.right form button{
+    position: absolute;
+    right: 0px;
+    top: 0;
+    padding: 0 26px;
+    height: 100%;
+    cursor: pointer;
+    /* -webkit-appearance: button; */
+    background-color: transparent;
+    background-image: none;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #ededed;
+}
+.row-right .fa-insta a{
+    display: inline-block;
+    height: 41px;
+    width: 41px;
+    font-size: 16px;
+    color: #404040;
+    border: 1px solid #ededed;
+    border-radius: 50%;
+    line-height: 38px;
+    text-align: center;
+    background: #ffffff;
+    transition: all, 0.3s;
+    margin-right: 10px;
+    text-decoration: inherit;
+}
+.row2-con{
+    /* display:flex;
+    justify-content: center;
+    align-items: center; */
+    font-size: 16px;
+    font-family: "Cairo", sans-serif;
+    color: #6f6f6f;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center!important;
+    margin: 0;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
